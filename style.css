@@ -54,55 +54,64 @@ body{
 }
 .container-brands{
   width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
+  display:flex;
   
+  justify-content: center;
 }
 .all-brands{
-  width: 80%;
-  height:140px;
- 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid silver;
+  border: 1px solid rgb(243, 239, 239);
   border-left: none;
-  border-right: none;
-  
-  
+  border-right: none ;
 }
 
 .brands{
-  width: 987px;
-  height: 40px;
-  display: grid;
-  grid-template-columns: repeat(7,1fr);
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  
+  justify-content:center;
+  justify-items:center;
+ 
 }
-.brand{
-  width: 55px;
-  height:15px;
+.sub-brands{
+  display: flex;
 }
+.brands img{
+  margin: 30px;
+}
+
 
 .collection-title{
   text-align: center;
   margin-top: 100px;
   margin-bottom: 30px;
+  
 }
 .popular-collection{
   width: 100%;
 
 }
+.collection-items{
+  
+  display: flex;
+  flex-direction: column;
+  border:1px solid red;
+  padding: 17px;
+  
+  
+}
+.collection-items img{
+  align-items: center;
+  
+}
 
 .total-collection{
-  
+ 
   display: grid;
   grid-template-columns: repeat(3,329px);
   justify-content: center;
 
   justify-items: center;
+  grid-gap: 1em;
+  
   
 
   
@@ -113,11 +122,13 @@ body{
   justify-content: center;
   margin-top: 50px;
 }
+
 .see-more a{
   width: 980px;
   display: flex;
   text-decoration: none;
   justify-content: right;
+  align-items: center;
  
   color: #E02C6D;
   font-size: 16px;
@@ -194,22 +205,17 @@ footer{
     height: 222px;
   }
   
-  .all-brands{
-    height: 20vh;
-    
-  }
+ 
 
  .brands{
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 22px;
-  justify-items: center;
-
+   
  
 }
+
 .popular-collection{
   display:flex;
   flex-direction: column;
@@ -297,18 +303,16 @@ span{
   
   
 
- .brands{
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  
-  justify-content: center;
-  align-items: center;
-  row-gap: 22px;
-  justify-items: center;
-
- 
-}
+  .brands{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    justify-items:center;
+   
+  }
+  .sub-brands{
+    justify-content: center;
+  }
 
 .total-collection{
   display: grid;
