@@ -210,12 +210,25 @@ footer{
 
  
 }
+.popular-collection{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
 
 .total-collection{
-  display: grid;
-  grid-template-columns: repeat(1,100%);
-  row-gap: 15px;
   
+  grid-template-columns: repeat(1,100%);
+
+}
+.collection-items{
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+span{
+  margin-left: 16px;
 }
 
 .link-sec{
